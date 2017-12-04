@@ -14,6 +14,9 @@ textarea:focus {
 header {
   background-image: url(../img/main_bg.jpg);
   background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 section {
   padding-top: 7%;
@@ -249,7 +252,7 @@ section {
 #working_proc .content_button:hover {
   box-shadow: 0px 6px 14px 0px rgba(20, 20, 21, 0.09);
 }
-#working_proc .plus {
+.plus {
   vertical-align: -5px;
   font-size: 30px;
   font-weight: 100;
@@ -259,6 +262,7 @@ section {
 }
 .works_box {
   margin-top: 5%;
+  max-width: 360px;
   height: 360px;
   position: relative;
 }
@@ -303,4 +307,61 @@ section {
 }
 .works_box .signature:hover {
   opacity: 1;
+}
+.services_list {
+  left: 0;
+  list-style: none;
+  padding: 0px;
+}
+.services_list_item {
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 8px;
+  width: 100px;
+  height: 100px;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+}
+.services_list_item:hover {
+  box-shadow: 0px 0px 36px 0px rgba(20, 20, 21, 0.2);
+}
+.services_line {
+  display: block;
+  width: 57px;
+  height: 3px;
+  margin-bottom: 20px;
+  background-color: #fa9a87;
+}
+.services_info {
+  padding-left: 30px;
+}
+.services_info h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+.services_info p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.services_info button {
+  width: 236px;
+  height: 53px;
+  margin-top: 45px;
+  border: 1px solid #6e6e6e;
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.07);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
 }
