@@ -365,3 +365,113 @@ section {
   -o-border-radius: 50px;
   border-radius: 50px;
 }
+#accordion_example {
+  background-color: #f5f5f5;
+}
+.demo {
+  width: 50%;
+}
+.panel-heading h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.panel-body {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  background-color: #fff9f8;
+}
+.clients {
+  margin-bottom: -27px;
+}
+.slider_item_box .feedback-slider-item-box {
+  padding: 10px;
+  padding-top: 64px;
+  /* border: 1px solid @base-grey; */
+  margin: 0 20px;
+}
+.slider_item_box .feedback-slider-item-box:hover {
+  box-shadow: 0px 0px 27px rgba(20, 20, 21, 0.09);
+}
+.slider_item_box .feedback-slider-item-box:focus {
+  outline: none;
+}
+.slider_item_box .feedback-slider-item-box p {
+  margin-top: 10px;
+  font-size: 17px;
+}
+.slider_item_box .feedback-slider-item-box p span {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.slider_item_box .feedback-slider-item-box .rating {
+  color: #ffef3b;
+}
+.slider_item_box .feedback-slider-item-box .rating .empty-star {
+  color: #6e6e6e;
+}
+.slider_item_box img {
+  width: 128px;
+  height: 128px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin: 10px auto -64px auto;
+}
+.slick-slide:focus {
+  outline: none;
+}
+.slider-arrows {
+  padding: 18px;
+  font-size: 18px;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  height: 48px;
+  width: 48px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 3px 14px 0px rgba(20, 20, 21, 0.08);
+  -webkit-transform: translateY(-24px);
+  -ms-transform: translateY(-24px);
+  -o-transform: translateY(-24px);
+  transform: translateY(-24px);
+  background-color: #fff;
+}
+.slider-arrows:hover {
+  background-color: #ff6e47;
+  color: #fff;
+  cursor: pointer;
+}
+.arrow-right {
+  right: -20px;
+}
+.arrow-left {
+  left: -20px;
+}
+.slick-dots li button:before {
+  width: 20px;
+  height: 7px;
+  background-color: #aaaaaa;
+  color: transparent;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.slick-dots li.slick-active button:before {
+  color: transparent;
+  background-color: #ff6e47;
+}
+.slick-dots {
+  bottom: -40px;
+}
