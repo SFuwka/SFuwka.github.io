@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -39,7 +40,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+          <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 text-center">
             <div class="main-form">
               <p class="main-form-header"><span class="orange-span">Send</span> A Message</p>
               <form action="">
@@ -64,7 +65,7 @@
         </div>
         <div class="row">
           <div class="col-md-3 col-sm-6 text-center">
-            <div class="working_box content1">
+            <div class="working_box content1 wow fadeInLeft" data-wow-delay="0.4s">
               <p class="fa fa-magnet"></p>
               <h3>Koc Koi Tomi</h3>
               <p class="content_p">Lorem ipsum is dummy lorem very dumy</p>
@@ -72,7 +73,7 @@
             </div>
           </div>
           <div class="col-md-3 col-sm-6 text-center">
-            <div class="working_box content2">
+            <div class="working_box content2 wow fadeInLeft" data-wow-delay="0.3s">
               <p class="fa fa-bug"></p>
               <h3>Koimona Set</h3>
               <p class="content_p">Lorem ipsum is dummy you lorem very dumyL is </p>
@@ -80,7 +81,7 @@
             </div>
           </div>
           <div class="col-md-3 col-sm-6 text-center">
-            <div class="working_box content3">
+            <div class="working_box content3 wow fadeInLeft" data-wow-delay="0.2s">
               <p class="fa fa-cogs"></p>
               <h3>Setting Koire</h3>
               <p class="content_p">Lorem ipsum is dummy lorem very yLorem ipsus </p>
@@ -88,7 +89,7 @@
             </div>
           </div>
           <div class="col-md-3 col-sm-6 text-center">
-            <div class="working_box content4">
+            <div class="working_box content4 wow fadeInLeft" data-wow-delay="0.1s">
               <p class="fa fa-camera-retro"></p>
               <h3>Ko Image Lara</h3>
               <p class="content_p">Lorem ipsum is dummy ry dumyLorem ipsum is </p>
@@ -196,7 +197,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4">
+          <div class="col-lg-4 col-md-4 col-sm-offset-3">
             <div class="works_box">
               <img src="img/works/tiger.jpg" alt="тигр">
               <div class="signature">
@@ -467,17 +468,52 @@
   </div>
 </section>
 
+<footer id="footer">
+  <container>
+    <row>
+      <div class="col-xs-12 text-center">
+       <button type="button" class="btn_footer" data-toggle="modal" data-target="#myModal">Contact Us</button>
+      </div>
+    </row>
+  </container>
+</footer>
+
+<!-- modals -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog"  role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 <!--************************JS******************************* -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="slick/slick.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script>
       $(document).ready(function(){
   $('.feedback_slider').slick({
    infinite: true,
   slidesToShow: 2,
   slidesToScroll: 2,
-  autoplay: false,
+  autoplay: true,
   dots: true,
   autoplaySpeed: 3000,
   arrows: true,

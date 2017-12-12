@@ -123,7 +123,7 @@ section {
   color: #fc7254;
 }
 .main-form {
-  min-width: 372px;
+  /* min-width: 372px; */
   margin-top: 29%;
   padding: 16px 39px 29px 39px;
   -webkit-box-shadow: 0px 0px 57px 0px rgba(20, 20, 21, 0.2);
@@ -143,7 +143,7 @@ section {
 .main-form input,
 .main-form textarea {
   margin-top: 34px;
-  width: 100%;
+  width: 90%;
   border: none;
   border-bottom: 1px solid #706b73;
   font-size: 15px;
@@ -157,7 +157,7 @@ section {
 .main-form button {
   padding-left: 37px;
   margin-top: 17px;
-  width: 238px;
+  width: 70%;
   height: 55px;
   background-color: #ff5c36;
   border: none;
@@ -429,7 +429,7 @@ section {
 .slider-arrows {
   padding: 18px;
   font-size: 18px;
-  z-index: 999;
+  z-index: 2;
   position: absolute;
   top: 50%;
   height: 48px;
@@ -474,4 +474,36 @@ section {
 }
 .slick-dots {
   bottom: -40px;
+}
+footer {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #f5f5f5;
+}
+.btn_footer {
+  padding: 15px 35px;
+  border: 1px solid #e6e6e6;
+  color: #706b73;
+  background-color: #fff;
+  -webkit-border-radius: 27px;
+  -moz-border-radius: 27px;
+  -ms-border-radius: 27px;
+  -o-border-radius: 27px;
+  border-radius: 27px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.btn_footer:hover {
+  background-color: #ff6e47;
+  color: #fff;
+  box-shadow: 0px 11px 20px 0px rgba(20, 20, 21, 0.07);
+}
+.modal-dialog {
+  z-index: 1100;
+}
+@media (max-width: 400px) {
+  header {
+    min-width: 400px;
+  }
 }
