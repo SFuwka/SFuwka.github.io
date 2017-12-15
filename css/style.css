@@ -265,6 +265,12 @@ section {
   max-width: 360px;
   height: 360px;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.works_box img {
+  width: 100%;
+  height: 100%;
 }
 .works_box .signature {
   opacity: 0;
@@ -307,6 +313,9 @@ section {
 }
 .works_box .signature:hover {
   opacity: 1;
+}
+.services_pic img {
+  max-width: 100%;
 }
 .services_list {
   left: 0;
@@ -452,10 +461,10 @@ section {
   cursor: pointer;
 }
 .arrow-right {
-  right: -20px;
+  right: 0px;
 }
 .arrow-left {
-  left: -20px;
+  left: 0px;
 }
 .slick-dots li button:before {
   width: 20px;
@@ -502,8 +511,22 @@ footer {
 .modal-dialog {
   z-index: 1100;
 }
-@media (max-width: 400px) {
-  header {
-    min-width: 400px;
+@media (max-width: 480px) {
+  .main-title-text h1,
+  .section_header h2 {
+    font-size: 24px;
+  }
+  .main-title-text p,
+  .section_header p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 960px) {
+  .services_list {
+    text-align: center;
+  }
+  .services_list li {
+    display: inline-block;
+    text-align: center;
   }
 }
